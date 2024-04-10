@@ -6,4 +6,8 @@
     <string name="home">Home</string>
     <string name="favorite">Favorite</string>
     <string name="person">Person</string>
+    <string name="ng_nh_p">ĐĂNG NHẬP</string>
+    <string name="ng_k">ĐĂNG KÝ</string>
+    <string name="textview">TextView</string>
+    <string name="th_m_playlist">Thêm Playlist</string>
 </resources>
