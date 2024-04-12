@@ -22,10 +22,13 @@ class DangNhapActivity : AppCompatActivity() {
         }
 
         binding.btnLogIn.setOnClickListener{
-            if(binding.etEmail.equals("") || binding.etPassWord.equals("")){
+            val email = binding.etEmail.text.toString()
+            val password = binding.etPassWord.text.toString()
+
+            if(email.isEmpty() || password.isEmpty()){
                 Toast.makeText(
                     this@DangNhapActivity,
-                    "Yêu cầu nhập đầy đủ thông tin để sử dụng dịch vụ của chúng tôi",
+                    "Yêu cầu nhập đầy đủ thông tin",
                     Toast.LENGTH_LONG
                 ).show()
             }

@@ -15,12 +15,22 @@ class DangKyActivity : AppCompatActivity() {
         binding = ActivityDangKyBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.tvDangNhap.setOnClickListener{
+            val intent = Intent(this, DangKyActivity::class.java)
+            startActivity(intent)
+        }
+
         binding.btnLogIn.setOnClickListener {
-            if(binding.etHoTen.equals("") || binding.etEmail.equals("") ||
-                binding.etPassWord.equals("") || binding.etEnterPassWord.equals("")){
+            val email = binding.etEmail.text.toString()
+            val password = binding.etPassWord.text.toString()
+            val hoten = binding.etHoTen.text.toString()
+            val nhapLai = binding.etEnterPassWord.text.toString()
+
+            if(email.isEmpty() || password.isEmpty() ||
+                hoten.isEmpty() || nhapLai.isEmpty()){
                 Toast.makeText(
                     this@DangKyActivity,
-                    "Yêu cầu nhập đầy đủ thông tin để sử dụng dịch vụ của chúng tôi",
+                    "Yêu cầu nhập đầy đủ thông tin",
                     Toast.LENGTH_LONG
                 ).show()
             }
