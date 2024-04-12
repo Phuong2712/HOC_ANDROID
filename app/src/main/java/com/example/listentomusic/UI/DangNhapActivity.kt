@@ -29,10 +29,13 @@ class DangNhapActivity : AppCompatActivity() {
                     Toast.LENGTH_LONG
                 ).show()
             }
+            else {
+                // chuyển hướng
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+            }
 
-            // chuyển hướng
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
+
         }
     }
 }

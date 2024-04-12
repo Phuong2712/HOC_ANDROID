@@ -28,7 +28,9 @@ class MainActivity : AppCompatActivity() {
         recyclerView = binding.recyclerView
         adapter = ParentAdapter(ParentList.song)
         recyclerView.adapter = adapter
-        recyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+        recyclerView.layoutManager = LinearLayoutManager(this,
+            LinearLayoutManager.VERTICAL,
+            false)
 
         // thêm Navigation: thanh điều hướng
         bottomNavigationView = binding.narView
@@ -48,6 +50,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.menu_per ->{
                     val intent = Intent(this, PersonActivity::class.java)
+                    startActivity(intent)
                     true
                 }
                 else -> false
