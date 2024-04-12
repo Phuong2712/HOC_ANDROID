@@ -1,16 +1,15 @@
-package com.example.listentomusic
+package com.example.listentomusic.UI
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.example.listentomusic.R
 
-class DangKyActivity : AppCompatActivity() {
+class FavoriteActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_dang_ky)
+        setContentView(R.layout.activity_favorite)
 
     }
 }

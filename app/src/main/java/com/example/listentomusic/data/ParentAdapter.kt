@@ -1,19 +1,19 @@
-package com.example.listentomusic
+package com.example.listentomusic.data
 
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
-class RecyclerViewAdapter(private val dataList: List<ItemData>) :
-    RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>(){
+class ParentAdapter(private val dataList: List<ParentItem>) :
+    RecyclerView.Adapter<ParentAdapter.ViewHolder>(){
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): RecyclerViewAdapter.ViewHolder {
+    ): ViewHolder {
         TODO("Not yet implemented")
     }
 
-    override fun onBindViewHolder(holder: RecyclerViewAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         TODO("Not yet implemented")
     }
 

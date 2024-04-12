@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".DangKyActivity">
+    tools:context=".UI.DangKyActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -64,7 +64,7 @@
         app:layout_constraintVertical_bias="0.499" />
 
     <EditText
-        android:id="@+id/enterPassWord"
+        android:id="@+id/etEnterPassWord"
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:background="@drawable/corner"
